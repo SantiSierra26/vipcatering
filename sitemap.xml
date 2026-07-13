@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://vipcatering.online/</loc>
+    <lastmod>2025-07-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+
+    <image:image>
+      <image:loc>https://vipcatering.online/img/servicio-catering-empresarial-corporativo.webp</image:loc>
+      <image:caption>Catering corporativo para eventos empresariales</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vipcatering.online/img/pasabocas-catering.jpg</image:loc>
+      <image:caption>Refrigerios y pasabocas para eventos</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vipcatering.online/img/almuerzo-evento-corporativo.jpg</image:loc>
+      <image:caption>Almuerzos empresariales y menús gourmet</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vipcatering.online/img/desayunos-salon-eventos.jpg</image:loc>
+      <image:caption>Desayunos para reuniones y capacitaciones</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vipcatering.online/img/empanadas-pasabocas-catering-empresarial.jpg</image:loc>
+      <image:caption>Pasabocas variados para celebraciones</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vipcatering.online/img/cocteles-servicio-catering.jpg</image:loc>
+      <image:caption>Cocteles ideales para eventos sociales y empresariales</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vipcatering.online/img/equipo-vip-catering-buffet-empresarial.jpg</image:loc>
+      <image:caption>Personal profesional para atención en eventos</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vipcatering.online/img/estacion-cafe-vip-catering.jpg</image:loc>
+      <image:caption>Estaciones de café para eventos empresariales</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vipcatering.online/img/tabla-quesos-evento-corporativo.jpg</image:loc>
+      <image:caption>Tablas de quesos gourmet con frutas y nueces</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vipcatering.online/img/buffet-servicio-evento-social.jpg</image:loc>
+      <image:caption>Buffet con variedad de menús para todo tipo de eventos</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vipcatering.online/img/sillas-mesas-evento-empresarial.jpg</image:loc>
+      <image:caption>Alquiler de sillas y mesas para eventos</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vipcatering.online/img/cristaleria-eventos-corporativos.JPG</image:loc>
+      <image:caption>Cristalería elegante para presentaciones profesionales</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vipcatering.online/img/vajilla-alquiler-bogota.jpg</image:loc>
+      <image:caption>Vajilla funcional y elegante para eventos sociales</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vipcatering.online/img/paella/paella-centrada.jpg</image:loc>
+      <image:caption>Paella tradicional con mariscos frescos</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vipcatering.online/img/pavo-navide%C3%B1o-evento-empresarial.jpg</image:loc>
+      <image:caption>Cenas navideñas con pavo relleno</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vipcatering.online/img/asado-vip-catering.jpg</image:loc>
+      <image:caption>Asados a la parrilla para eventos al aire libre</image:caption>
+    </image:image>
+    
+  </url>
+
+  <!-- Secciones internas -->
+  <url>
+    <loc>https://vipcatering.online/#inicio</loc>
+    <lastmod>2025-07-25</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://vipcatering.online/#servicios</loc>
+    <lastmod>2025-07-25</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://vipcatering.online/#galeria</loc>
+    <lastmod>2025-07-25</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://vipcatering.online/#nosotros</loc>
+    <lastmod>2025-07-25</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://vipcatering.online/#contacto</loc>
+    <lastmod>2025-07-25</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+</urlset>
