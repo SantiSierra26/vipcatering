@@ -24,9 +24,7 @@ img {
 
 footer {
   text-align: center;
-  margin-top: 40px;
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-size: 15px;
 }
 
 footer hr {
@@ -46,37 +44,62 @@ footer hr {
   padding: 10px 16px;
   background: #e7e4e0;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  height: 110px; /* Ajusta la altura */
+  height: 110px;
+  /* Ajusta la altura */
 
   padding: 1rem;
-  padding-right: 60px; /* Espacio para el botón del menú */
+  padding-right: 60px;
+  /* Espacio para el botón del menú */
   display: flex;
-  align-items: center; /* Centra verticalmente */
+  align-items: center;
+  /* Centra verticalmente */
 }
 
-/* Inferior */
+/* Inferior 
 .inferior {
-  width: 100%; /* Se extiende a todo el ancho */
-  height: 20px; /* Ajusta la altura */
+  width: 100%;
+  height: 20px;
   padding: 1rem;
-  padding-right: 60px; /* Espacio para el botón del menú */
   display: flex;
-  align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+  justify-content: center;
+} */
+
+.inferior {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 25px;
 }
 
 /* Logos redes sociales */
 .fa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
-  font-size: 26px;
-  width: 30px;
-  text-align: center;
+  width: 70px;
+  height: 50px;
   text-decoration: none;
   border-radius: 50%;
   margin-left: 10px;
   margin-right: 10px;
   color: white;
 }
+
+.fa svg {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+}
+
+.fa-whatsapp-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
 
 @media screen and (max-width: 100px) {
   .inferior {
@@ -102,27 +125,33 @@ footer hr {
 /* Ocultar menú superior */
 @media screen and (max-width: 930px) {
   body {
-    padding-top: 0; /* Elimina el padding superior */
+    padding-top: 0;
+    /* Elimina el padding superior */
   }
 
   .item {
-    display: none; /* Oculta los botones del menú */
+    display: none;
+    /* Oculta los botones del menú */
   }
 
   .superior {
     position: sticky;
-    justify-content: center; /* Centra el contenido */
+    justify-content: center;
+    /* Centra el contenido */
     height: 100px;
   }
 
   .first-item {
-    margin: 0; /* Elimina el margen para centrar el logo */
+    margin: 0;
+    /* Elimina el margen para centrar el logo */
   }
 
   .logo-only {
     display: flex;
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
   }
 
   .logo {
@@ -139,18 +168,32 @@ footer hr {
   justify-content: center;
   padding-top: 50px;
   width: 100%;
-  height: 100vh; /* Ocupa toda la altura de la ventana */
-  background-image: url("img/quesos/pasabocas-corporativos-tablas-quesos-vip-catering.jpg");
+  height: 100vh;
+  /* Ocupa toda la altura de la ventana */
+  background-image: url("img/quesos/pasabocas-corporativos-tablas-quesos-vip-catering.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1; /* Asegura que el fondo esté detrás de otros elementos */
+  z-index: -1;
+  /* Asegura que el fondo esté detrás de otros elementos */
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
 }
 
 .sobre {
   width: 15%;
 }
+
+/* Efecto de aparición del logo */
+#sobrepuesta {
+  opacity: 0;
+  transition: opacity 2s ease;
+  transition-delay: 1s;
+}
+
+#sobrepuesta.visible {
+  opacity: 1;
+}
+
 
 /* Ajustar imagen de fondo */
 @media screen and (min-width: 1650px) {
@@ -210,7 +253,8 @@ footer hr {
 /* Ajustar imagen de fondo */
 @media screen and (max-width: 1200px) {
   .sobre {
-    width: 22%; /* Logo más grande en pantallas pequeñas */
+    width: 22%;
+    /* Logo más grande en pantallas pequeñas */
   }
 
   .intro {
@@ -257,13 +301,15 @@ footer hr {
 
 .centro {
   width: 60%;
-  margin: 20px auto; /* Centra horizontalmente */
+  margin: 20px auto;
+  /* Centra horizontalmente */
   text-align: justify;
 }
 
 .subtitulo {
   text-align: center;
-  margin: 0 auto; /* Centra horizontalmente */
+  margin: 0 auto;
+  /* Centra horizontalmente */
 }
 
 h1 {
@@ -308,11 +354,20 @@ section {
 .inicio-izq {
   position: relative;
   text-align: justify;
-  padding: 50px;
+  padding: 50px 50px 50px 20px;
+
+  margin-top: 35px;
+  margin-bottom: 50px;
+  margin-left: 0;
 }
 
+.inicio-izq p {
+  font-size: 22px;
+}
+
+
 .inicio-izq h1 {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   font-size: 50px;
 }
 
@@ -325,53 +380,59 @@ section {
 }
 
 .foto {
-  display: block; /* Importante: las imágenes son inline por defecto */
+  display: block;
+  /* Importante: las imágenes son inline por defecto */
   margin: 0 auto;
-  width: 300px;
+  width: 360px;
+  height: auto;
   border-radius: 5%;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
 }
 
 .foto-inicio {
-  display: block; /* Importante: las imágenes son inline por defecto */
+  display: block;
+  /* Importante: las imágenes son inline por defecto */
   margin: 10 auto;
   width: 280px;
   border-radius: 5%;
   box-shadow: rgba(14, 14, 14, 0.25) 0 8px 15px;
 }
 
-.sillas {
-  display: grid;
-  grid-template-columns: 60% 40%;
+.servicios {
+  padding-top: 32px;
+  padding-bottom: 18px;
+}
 
-  gap: 10px;
-  padding: 2rem;
-
-  max-width: 1200px; /* Ancho máximo */
-  margin: 0 auto; /* Centrado horizontal */
+.alquileres {
+  padding-top: 24px;
 }
 
 @media (max-width: 1100px) {
   .inicio {
     display: grid;
-    grid-template-columns: 1fr; /* una sola columna */
+    grid-template-columns: 1fr;
+    /* una sola columna */
     margin: 3% 5%;
     gap: 0;
-    margin-bottom: 40px; /* espacio inferior */
+    margin-bottom: 40px;
+    /* espacio inferior */
   }
 
   .inicio-der {
-    margin: 0; /* centrado automático */
+    margin: 0;
+    /* centrado automático */
   }
 
   .ocultar {
-    display: none; /* Oculta el elemento */
+    display: none;
+    /* Oculta el elemento */
   }
 
   .foto {
     width: 100%;
     max-width: 270px;
-    height: auto; /* Mantiene la proporción de la imagen */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
     margin: 0;
   }
 
@@ -404,8 +465,10 @@ section {
   gap: 40px;
   padding: 2rem;
 
-  max-width: 1200px; /* Ancho máximo */
-  margin: 0 auto; /* Centrado horizontal */
+  max-width: 1200px;
+  /* Ancho máximo */
+  margin: 0 auto;
+  /* Centrado horizontal */
 }
 
 /* Especialidades */
@@ -420,40 +483,81 @@ section {
 }
 
 #especialidades {
-  margin-top: 7px;
+  margin-top: 70px;
+}
+
+#especialidades h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+/* Contenedor de la imagen dentro de las cards de especialidades:
+   necesita una altura definida para que .centrada (height:100%) funcione */
+.esp .card .row.g-0>.col-md-4 {
+  position: relative;
+  overflow: hidden;
+  min-height: 260px;
+  /* Ajusta esta altura a tu gusto */
 }
 
 .centrada {
+  position: absolute;
+  top: 0;
+  left: 0;
   object-fit: cover;
+  object-position: center;
   width: 100%;
   height: 100%;
 }
 
+
 /* Vista móvil */
 .vista-movil {
   width: auto;
-  max-height: 300px; /* Ajusta la altura máxima */
+  max-height: 300px;
+  /* Ajusta la altura máxima */
 }
 
 @media screen and (min-width: 800px) {
   .lta {
-    display: block; /* Muestra la imagen en pantallas grandes */
+    display: block;
+    /* Muestra la imagen en pantallas grandes */
   }
+
   .vista-movil {
-    display: none; /* Oculta la imagen en pantallas grandes */
+    display: none;
+    /* Oculta la imagen en pantallas grandes */
   }
 }
 
+/* Vista móvil (< 800px): la imagen fluye normalmente, sin recorte forzado,
+   y se muestra la versión .vista-movil en vez de la .lta */
 @media screen and (max-width: 800px) {
+  .esp .card .row.g-0>.col-md-4 {
+    min-height: 0;
+    overflow: visible;
+  }
+
+  .centrada {
+    position: static;
+    height: auto;
+  }
+
   .lta {
-    display: none; /* Oculta la imagen en pantallas pequeñas */
+    display: none;
+    /* Oculta la imagen de escritorio */
   }
 
   .vista-movil {
-    display: block; /* Muestra la imagen en pantallas pequeñas */
-    margin: 0 auto; /* Centra horizontalmente */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    max-height: auto; /* Ajusta la altura máxima */
+    display: block;
+    /* Muestra la imagen de móvil */
+    margin: 0 auto;
+    /* Centra horizontalmente */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    max-height: auto;
+    /* Ajusta la altura máxima */
   }
 }
 
@@ -463,9 +567,12 @@ section {
 
 .card-group {
   max-width: 80%;
-  margin: 20px auto; /* Centrado horizontal */
-  padding-bottom: 30px; /* Espacio inferior */
-  gap: 40px; /* Espacio entre tarjetas */
+  margin: 20px auto;
+  /* Centrado horizontal */
+  padding-bottom: 30px;
+  /* Espacio inferior */
+  gap: 40px;
+  /* Espacio entre tarjetas */
 }
 
 .card-img-top {
@@ -475,15 +582,19 @@ section {
 
 .carousel-container {
   position: relative;
-  max-width: 800px; /* Puedes ajustar el ancho aquí */
-  max-height: 500px; /* Puedes ajustar la altura aquí */
-  margin: 40px auto; /* Centrado vertical y horizontal */
+  max-width: 800px;
+  /* Puedes ajustar el ancho aquí */
+  max-height: 500px;
+  /* Puedes ajustar la altura aquí */
+  margin: 40px auto;
+  /* Centrado vertical y horizontal */
   border-radius: 5%;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
 }
 
 .carousel-inner img {
-  max-height: 480px; /* Ajusta la altura máxima si quieres limitarla */
+  max-height: 480px;
+  /* Ajusta la altura máxima si quieres limitarla */
   object-fit: cover;
   border-radius: 5%;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
@@ -497,67 +608,176 @@ section {
   margin: 10px;
 }
 
+#galeria {
+  margin-top: 16px;
+  margin-bottom: 35px;
+}
+
+#nosotros {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .nosotros {
   display: grid;
-  grid-template-columns: 40% 60%;
-  gap: 10px;
+  grid-template-columns: 50% 50%;
+  gap: 40px;
   padding: 20px;
+  align-items: center;
 }
 
 .nosotros-izq {
-  display: flex;
-  justify-content: flex-end;
-  margin: 7% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 20px;
 }
 
-.imagen {
-  display: block;
-  margin: 0 auto; /* Centra horizontalmente */
-  width: 350px;
-  height: 460px;
-  border-radius: 5%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+.carrusel-nosotros {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  position: relative;
+  /* Ancla los indicadores y flechas a este contenedor */
+}
+
+.carrusel-nosotros .carousel-inner {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, .15);
+}
+
+.carrusel-nosotros-frame {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  position: relative;
+}
+
+.carrusel-nosotros-frame img {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+.carrusel-nosotros .carousel-indicators {
+  display: none !important;
+}
+
+.carrusel-nosotros .carousel-indicators button {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important;
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  border: none !important;
+  opacity: 1 !important;
+  margin: 0 4px !important;
+  text-indent: -9999px;
+}
+
+.carrusel-nosotros .carousel-indicators button.active {
+  background-color: #ffffff !important;
+  transform: scale(1.2);
+}
+
+.carrusel-nosotros .carousel-control-prev,
+.carrusel-nosotros .carousel-control-next {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: auto;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 50%;
+  opacity: 1;
+  transition: background-color .2s ease;
+}
+
+.carrusel-nosotros .carousel-control-prev {
+  left: 12px;
+}
+
+.carrusel-nosotros .carousel-control-next {
+  right: 12px;
+}
+
+.carrusel-nosotros .carousel-control-prev:hover,
+.carrusel-nosotros .carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.carrusel-nosotros .carousel-control-prev-icon,
+.carrusel-nosotros .carousel-control-next-icon {
+  background-size: 55%;
 }
 
 .nosotros-der {
   text-align: justify;
-  margin: 0 20%;
-  padding: 15px;
+  padding: 10px;
+  margin-right: 40px;
+  padding-right: 190px;
 }
 
-.nosotros-der h1 {
+.nosotros-der h2 {
   margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-  .nosotros {
-    grid-template-columns: 1fr; /* 🔄 Cambia a una sola columna */
-  }
+@media (max-width:1100px){
 
-  .nosotros-der {
-    order: 1;
-  }
+    .nosotros{
+        gap:25px;
+    }
 
-  .nosotros-izq {
-    order: 2;
-  }
+    .nosotros-izq{
+        margin-left:0;
+    }
 
-  .nosotros-izq,
-  .nosotros-der {
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-  }
+    .nosotros-der{
+        margin-right:0;
+    }
 
-  .imagen {
-    width: 90%;
-    height: auto;
-  }
+}
 
-  .nosotros-der {
-    margin: 0 10%;
-    text-align: justify;
-  }
+@media (max-width:768px){
+
+    #nosotros{
+        padding:40px 20px;
+    }
+
+    .nosotros{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .nosotros-izq{
+        order:1;
+        margin:0;
+    }
+
+    .nosotros-der{
+        order:2;
+        margin:0;
+        padding:0;
+        text-align:justify;
+    }
+
+    .carrusel-nosotros{
+        max-width:380px;
+    }
+
+    .carrusel-nosotros-frame{
+        aspect-ratio:4/5;
+    }
+
 }
 
 .titulo-final {
@@ -569,11 +789,119 @@ section {
 
 .links {
   color: white;
+  text-decoration: none;
 }
 
+
+/* ===========================
+   CONTACTO
+=========================== */
+
+#contacto {
+  font-size: 24px;
+  margin-top: 30px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+#contacto .row {
+  text-align: center;
+}
+
+#contacto p {
+  margin-bottom: .5rem;
+}
+
+#contacto .links {
+  text-decoration: none;
+}
+
+.mapa-responsive {
+  width: 70%;
+  height: 380px;
+
+  border: 1px solid #ccc;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .20);
+}
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.inferior .fa {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  text-decoration: none;
+
+  transition: .25s;
+}
+
+.inferior .fa:hover {
+  transform: translateY(-4px);
+}
+
+.abajo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* ===========================
+   TABLETS
+=========================== */
+
+@media (max-width:992px) {
+
+  .mapa-responsive {
+    height: 350px;
+  }
+
+}
+
+/* ===========================
+   MÓVILES
+=========================== */
+
+@media (max-width:768px) {
+
+  #contacto {
+    padding: 50px 20px;
+  }
+
+  #contacto .col-12 {
+    margin-bottom: 25px;
+  }
+
+  .inferior {
+    gap: 14px;
+  }
+
+  .inferior .fa {
+    width: 45px;
+    height: 45px;
+  }
+
+}
+
+@media screen and (max-width: 930px) {
+  footer {
+    padding-bottom: 32px;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
-  .mapa {
-    display: none; /* Oculta el mapa en pantallas pequeñas */
+  .mapa-responsive {
+    display: none;
+    /* Oculta el mapa en pantallas pequeñas */
   }
 }
 
@@ -581,6 +909,11 @@ section {
   align-self: first baseline;
 }
 
+header a {
+  margin-left: 4rem;
+}
+
+.btn,
 button {
   appearance: none;
   background-color: transparent;
@@ -589,19 +922,10 @@ button {
   box-sizing: border-box;
   color: #3b3b3b;
   cursor: pointer;
-  display: inline-block;
-  /*
-  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-
-  */
   font-family: 'Playfair Display', serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 590;
   line-height: normal;
-  margin: 0;
   min-height: 2em;
   width: auto;
   outline: none;
@@ -615,10 +939,12 @@ button {
   will-change: transform;
 }
 
+.btn:disabled,
 button:disabled {
   pointer-events: none;
 }
 
+.btn:hover,
 button:hover {
   color: #fff;
   background-color: #1a1a1a;
@@ -626,10 +952,12 @@ button:hover {
   transform: translateY(-2px);
 }
 
+.btn:active,
 button:active {
   box-shadow: none;
   transform: translateY(0);
 }
+
 
 .link {
   padding: 0;
@@ -638,36 +966,45 @@ button:active {
   display: inline-flex;
   justify-content: center;
   color: fff;
-  margin-left: 1px;
+
 }
 
 .btn-contacto-movil {
-  display: none; /* Visible solo en móviles */
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
 
-  font-size: 26px;
-  text-align: center;
-  margin-left: 0;
-  margin-right: 0;
-  background-color: #25d366; /* Verde WhatsApp */
-  color: white;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 60px;
+  height: 60px;
+
   display: flex;
-  align-items: right;
   justify-content: center;
-  z-index: 1000;
+  align-items: center;
+
+  background: #25D366;
+  color: #fff;
+
+  border-radius: 50%;
   text-decoration: none;
-  transition: background-color 0.3s, transform 0.3s ease;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
+  transition: transform .2s ease, box-shadow .2s ease;
+
+  padding: 0;
+  margin: 0;
+  line-height: 1;
 }
 
 .btn-contacto-movil:hover {
   background-color: #1ebe5d;
   transform: scale(1.1);
+}
+
+.btn-contacto-movil svg {
+  display: block;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
 }
 
 @media (max-width: 768px) {
