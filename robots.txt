@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vipcatering.online/sitemap.xml
+Sitemap: https://vipcatering.pro/sitemap.xml
